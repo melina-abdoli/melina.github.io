@@ -1,0 +1,401 @@
+@font-face{
+    font-family: "Vazir";
+    src: url("/fonts/Vazir.eot"),
+    url("/fonts//Vazir.ttf"),
+    url("/fonts/Vazir.woff");
+}
+:root{
+    --cream: #E2C9B3;
+    --brown: #998478;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    direction: rtl;
+    font-family: "Vazir";
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    display: inline;
+    margin: 0 50px;
+    cursor: pointer;
+}
+li a.login{
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 50px;
+    padding: 5px 30px;
+    color: #000;
+}
+li a.login:hover{
+    background-color: var(--cream);
+    color: #fff;
+    border: none;
+}
+.icons > img{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.hero{
+    width: 100%;
+    height: 80vh;
+    margin: 30px 0;
+    position: relative;
+    padding-right: 80px;
+}
+.hero h1{
+    font-size: 50px;
+}
+.herobtn-buy{
+    font-family: "Vazir";
+    margin-top: 40px;
+    width: 220px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--brown);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.herobtn-buy:hover{
+    background: transparent;
+    border: 4px solid var(--brown);
+    color: var(--brown);
+}
+.hero-circles{
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    width: 60%;
+}
+.new-products, .popular-products, .customers{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    margin: 80px 0;
+}
+.header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 15px 0;
+}
+.header p{
+    font-size: 26px;
+}
+.header p::before{
+    content: "";
+    width: 35%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+.header p::after{
+    content: "";
+    width: 35%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+.new-products .container, .popular-products .container, .customers .container{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.new-products img, .popular-products img{
+    width: 350px;
+    height: 400px;
+}
+.card{
+    height: 500px;
+    background-color: var(--cream);
+    border-radius: 45px;
+    position: relative;
+}
+.card .discount{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 4px 20px;
+    font-size: 26px;
+}
+.card .price{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 24px;
+}
+.popular-products .container{
+    background-color: var(--brown);
+}
+.customers .container{
+    background-color: var(--cream);
+}
+.pop-card .btn{
+    display: block;
+    font-family: "Vazir";
+    width: 100%;
+    font-size: 22px;
+    border: 3px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 30px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+.pop-card .btn:hover{
+    background-color: #fff;
+    color: var(--brown);
+}
+.cust-box{
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 90px;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+.cust-box .profile{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: relative;
+    top: -50px;
+}
+.cust-box p.line{
+    width: 100%;
+    height: 2px;
+    background-color: #CCCCCC;
+    position: relative;
+    top: -30px;
+}
+.stars{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: -70px;
+}
+.text{
+   position: relative;
+   top: -100px;
+   font-size: 18px;
+   padding: 0 20px;
+}
+.cust-box p.line-two{
+    width: 100%;
+    height: 2px;
+    background-color: #CCCCCC;
+    position: relative;
+    top: -40px;
+}
+.name{
+    position: relative;
+   top: -10px;
+   font-size: 14px;
+   padding: 0 20px;
+}
+.email-img{
+    width: 400px;
+    height: 300px;
+    margin-left: 70px;
+ }
+.email {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ } 
+.content{
+    padding: 50px 100px;
+    font-size: 20px;
+    position: relative;
+}
+.email input[type="email"]{
+    width: 100%;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid var(--brown);
+    font-family: "Vazir";
+    padding: 16px 10px;
+    margin-top: 35px;
+    font-size: 16px;
+    position: relative;
+    outline: none;
+}
+.email input[type="submit"]{
+    color: #fff;
+    background-color: var(--brown);
+    font-size: 22px;
+    font-family: "Vazir";
+    width: 20%;
+    height: inherit;
+    position: absolute;
+    top: 65.8%;
+    left: 10%;
+    z-index: 1;
+    border-radius: 50px;
+    border: none;
+    border: 1px solid var(--brown);
+    padding: 11px 10px;
+    cursor: pointer;
+}
+.blog-post{
+    background-color: #333;
+    margin: 40px;
+    color: white;
+}
+.posts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.blog-post h1{
+    padding: 50px 100px;
+}
+.blog img{
+    width: 300px;
+    height: 400px;
+}
+.blog{
+    position: relative;
+}
+.blog p{
+    background-color: var(--brown);
+    opacity: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+    text-align: center;
+    z-index: 999;
+}
+.card-center p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 35px;
+}
+.footer .top img{
+    width: 280px;
+    height: 60px;
+    padding-right: 40px;
+}
+.footer .top p{
+    width: 77%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+}
+.footer .top p::before{
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: #000;
+    border-radius: 50px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+}
+.footer .top p::after{
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: #000;
+    border-radius: 50px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+.top{
+    position: relative;
+}
+.footer .links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 20px 0;
+    padding-bottom: 5px;
+}
+.footer .links li{
+    display: block;
+}
+.footer .links li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+}
+.footer .links li a.first{
+    color: var(--brown);
+}
+.footer .last{
+    padding-left: 50px;
+    font-size: 22px;
+}
+.footer .last p{
+    display: inline;
+}
+.footer .last .fa-solid{
+    padding-left: 8px;
+}
+.footer .last .social-media{
+    margin-top: 18px;
+}
+.footer .last .social-media .fa-brands{
+    padding-left: 50px;
+}
+.copyright{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright i{
+    width: 100%;
+    height: 0.5px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.copyright .right{
+    display: inline-block;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+.copyright .left{
+    display: inline-block;
+    padding-left: 40px;
+    padding-top: 20px;
+}
